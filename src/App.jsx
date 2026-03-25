@@ -6,6 +6,7 @@ import DashboardPreview from './components/DashboardPreview';
 import SocialProofSection from './components/SocialProofSection';
 import AnalyticsSection from './components/AnalyticsSection';
 import FeaturesSection from './components/Features';
+import TestimonialSection from './components/Testimonials';
 
 function App() {
   const [isBannerVisible, setIsBannerVisible] = useState(true);
@@ -35,6 +36,7 @@ function App() {
       {/* Analytics Section */}
       <AnalyticsSection />
       <FeaturesSection />
+      <TestimonialSection />
 
       {/* Spacer */}
       <div className="h-20 bg-slate-50" />
