@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Banner from './components/Banner';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import DashboardPreview from './components/DashboardPreview';
+import SocialProofSection from './components/SocialProofSection';
+import AnalyticsSection from './components/AnalyticsSection';
 
 function App() {
   const [isBannerVisible, setIsBannerVisible] = useState(true);
@@ -23,8 +26,17 @@ function App() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Optional: Spacer for scrolling behavior check */}
-      <div className="h-96 bg-slate-50" />
+      {/* Dashboard Preview */}
+      <DashboardPreview />
+
+      {/* Social Proof Logos */}
+      <SocialProofSection />
+
+      {/* Analytics Section */}
+      <AnalyticsSection />
+
+      {/* Spacer */}
+      <div className="h-20 bg-slate-50" />
     </div>
   );
 }
