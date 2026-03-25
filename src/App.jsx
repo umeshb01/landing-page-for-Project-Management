@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import DashboardPreview from './components/DashboardPreview';
 import SocialProofSection from './components/SocialProofSection';
 import AnalyticsSection from './components/AnalyticsSection';
+import FeaturesSection from './components/Features';
 
 function App() {
   const [isBannerVisible, setIsBannerVisible] = useState(true);
@@ -12,10 +13,9 @@ function App() {
   return (
     <div className="min-h-screen font-sans bg-slate-50">
       {/* Announcement Banner */}
-      <div 
-        className={`transition-all duration-500 ease-in-out overflow-hidden ${
-          isBannerVisible ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'
-        }`}
+      <div
+        className={`transition-all duration-500 ease-in-out overflow-hidden ${isBannerVisible ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'
+          }`}
       >
         <Banner isVisible={isBannerVisible} setIsVisible={setIsBannerVisible} />
       </div>
@@ -34,6 +34,7 @@ function App() {
 
       {/* Analytics Section */}
       <AnalyticsSection />
+      <FeaturesSection />
 
       {/* Spacer */}
       <div className="h-20 bg-slate-50" />
